@@ -16,9 +16,9 @@
 
 ## 스터디원
 - 김가영
-  - [GitHub] (https://github.com/kayeong97
+  - [GitHub] (https://github.com/kayeong97)
 - 조민서
-  - [GitHub] (https://github.com/chominseo0723
+  - [GitHub] (https://github.com/chominseo0723)
 - 이나현 
   - [GitHub] (https://github.com/lnahyun)  
   - [Blog] (https://blog.naver.com/llnhyun)

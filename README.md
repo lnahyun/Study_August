@@ -13,3 +13,13 @@
 - 문제 풀이에 쓰인 개념, 알고리즘, 자료구조 등 정리해서 설명하기  
 - 문제를 성공하지 못했을 시, 검색하여 성공하지 못한 이유를 알아내고 해결하기
 
+
+## 스터디원
+- 김가영
+  - [GitHub] (https://github.com/kayeong97
+- 조민서
+  - [GitHub] (https://github.com/chominseo0723
+- 이나현 
+  - [GitHub] (https://github.com/lnahyun)  
+  - [Blog] (https://blog.naver.com/llnhyun)
+

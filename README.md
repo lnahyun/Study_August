@@ -22,5 +22,5 @@
   - [GitHub] (https://github.com/chominseo0723)
 - 이나현 
   - [GitHub] (https://github.com/lnahyun)  
-  - [Blog] (https://blog.naver.com/llnhyun)
+
 

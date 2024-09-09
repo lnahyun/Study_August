@@ -86,43 +86,54 @@
 
 ### 아이디어
 
-처음엔 규칙을 찾으려고 했는데, 코드가 너무너무 복잡해질 것 같고 명확한 규칙을 찾기 힘들 것 같아서 노가다로 돌려보자 생각함
-
-처음 수를 666으로 준 다음, 1씩 계속 증가시키며 666이 포함되어있는지 검사하자!
-
-- 슈도코드
+#### 슈도코드
 ```java
 입력 처리 :
 	정수 N 읽기
+	N 길이의 weight(몸무게)배열, height(키)배열 생성 -> int형
 
-검사하기 :
-	int num = 666;
-	count 1로 초기화.(첫 수를 666으로 줬기 때문)
+for(N번)
+	몸무게와 키 입력받기
+	: 각 줄을 문자열로 읽어서 공백으로 분리하자!
+	: 분리한 순서대로 몸무게, 키 배열에 저장하기
 
-	while(count가 N이 되기 전까지) {
-		num++; 
-		if(String으로 형변환한 num에 "666"이 포함되어 있는가?)
-			count++;
-		}
+비교하기 :
+	등수 저장할 배열 int형으로 생성
+	//이중 반복문
+	for(N번)
+		등수 초기화 : 1 (이유 -> 자신보다 더 큰 덩치의 사람이 k명이라면 그 사람의 덩치 등수는 k+1 )
+		for(N번) 
+			if (본인과 비교하지 않도록 처리)
+				continue;
+			if (본인 몸무게, 키가 비교할 대상보다 크면) count 증가
 
 출력 :
-	num 출력
+	for-each루프로 출력
+			
 ```
-
 ---
 
 ### JAVA 문법 정리
 
-- **contains 메소드**
-: 문자열이 특정 문자열을 포함하고 있는지 확인하는 메소드
-: ex) "6667".contains("666") 은 'true' 반환
+**- 'for-ech'문**
 
-- **코드 추가 설명**
-
+: 배열이나 컬렉션의 요소를 순회(iterate). 인덱스를 사용하지 않고도 각 요소에 접근 가능
 ```java
- if(Integer.toString(num).contains("666"))
- 	count++;
+for (Type element : collection) {
+   // element를 사용하여 작업 수행
+}
 ```
 
-\- num을 문자열로 변환한 후, "666"이 포함되어 있는지 확인하는 if문.
-\- contains는 문자열 메소드이기 때문에, 정수 num을 문자열로 변환한 후 contains메소드를 사용해야 함
+- Type: 컬렉션 또는 배열의 요소 타입
+- element: 각 반 복에서 컬렉션 또는 배열의 현재 요소를 저장하는 변수
+- collection: 배열이나 Iterable 인터페이스를 구현한 컬렉션 객체
+
+**- 추가 코드 설명**
+
+```java
+for(int result : grade)
+    System.out.print(result + " ");
+```
+
+- for(int result : grade) : grade 배열의 각 요소를 순회(for-each문)
+- System.out.print(result + " "); : 줄 바꿈 없이 출력하고, 출력값을 공백으로 구분

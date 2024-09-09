@@ -16,7 +16,7 @@ public class Main {
                 if(StackList.isEmpty()) {
                     if(str[j].equals(")")) {
                         count++; //스택이 빈 상태에서 ")"가 들어온 상태. count를 ++ 해주어서 올바른 괄호가 아니라는 것을 확인한다.
-                        continue;
+                        break;
                     }
                     else StackList.add(str[j]);
                 }
@@ -27,11 +27,7 @@ public class Main {
                 }
                 //짝이 아니라면 스택에 쌓아주기
                 else {
-                    if(str[j].equals(")")) { //짝이 없는데 )가 들어온다면?
-                        count++; //count해서 올바른 괄호가 아니란걸 표시
-                        continue;
-                    }
-                    else StackList.addLast(str[j]);
+                    StackList.addLast(str[j]);
                 }
             }
 
@@ -40,9 +36,9 @@ public class Main {
             else sb.append("NO" +"\n");
 
             StackList.clear();
-            }
-
-        System.out.print(sb);
         }
 
+        System.out.print(sb);
     }
+
+}

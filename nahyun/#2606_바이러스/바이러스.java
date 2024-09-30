@@ -32,7 +32,7 @@ public class Main {
             check[node] = true;
             set.add(Integer.toString(node));
 
-            for(int i = 0; i<check.length; i++) {
+            for(int i = 1; i<check.length; i++) {
                 if(search[node][i] == 1 && !check[i]) {
                     dfs(i, search, check, set);
                 }

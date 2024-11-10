@@ -39,6 +39,7 @@ public class Main {
     static void dfs(int i, int k, int[][] arr, int N, int M) {//오버플로우 방지 조건
         if(i<0 || k<0 || i >=M || k>= N || arr[i][k] == 0)
             return;
+        
         arr[i][k] = 0; //방문처리
         dfs(i-1, k, arr, N, M);
         dfs(i, k+1, arr, N, M);
